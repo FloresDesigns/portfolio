@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Who is Vance Flores</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Flores Designs</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="aboutme.html">About me</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Who is Vance Flores</h2>
+								<p>Father. Husband. Aspiring Full Stack Developer</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">I am...</h3>
+									<p>I have a strong appreciation for family connections, valuing them immensely and deriving happiness from their company. Engaging in sports and video games provides me with both relaxation and thrills, striking a harmonious blend between staying active and enjoying immersive entertainment. My unquenchable curiosity fuels my eagerness to explore a wide array of subjects, with a special inclination towards delving into the intricacies of computers. Alongside my current location in Mexico, I possess an open-mindedness to welcome novel experiences and venture into diverse territories dictated by life's path. Additionally, I take great pleasure in listening to podcasts, which further enriches my desire for learning and exploration.</p>
+
+									<p>I am dedicated and diligent, tirelessly putting in effort to support and provide for their family. Their actions are driven by a deep sense of responsibility and love, as they work long hours and make sacrifices to ensure their family's well-being. Whether it's working multiple jobs or taking on challenging tasks, their determination shines through as they strive to create a better life for their loved ones.</p>
+
+									<h3 class="major">proficiency in various programming languages</h3>
+									<p> <strong> - CSS - Bootstrap - JQuery - JavaScript - TypeScript - React - SCSS </strong><br>
+										I have been able to get certifications through LinkedIn and Udemy and
+										my ongoing studies consist of "The Complete Web Developer in 2023: Zero to Mastery".
+										I also have this amazing podcast that helps me get through things when I need an eye break from the screen
+										but want to keep learning "HTML all the things".
+
+									</p>
+
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="images/download.jpg" alt="" /></a>
+											<h3 class="major">Zero to Mastery</h3>
+											<p>The most efficient and supportive way for you to learn in-demand skills, get hired, and advance your career.</p>
+											<a href="https://zerotomastery.io/" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/podcast.png" alt="" /></a>
+											<h3 class="major">HTML All the Things</h3>
+											<p>The adventures of Matt Lawrence and Mike Karan through the world of web development, web design, and small business management.</p>
+											<a href="https://open.spotify.com/show/2MWqU5ZbO69jy3RZ74wgdM" class="special">Learn more</a>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+				<section id="footer">
+					<div class="inner">
+						<h2 class="major">Get in touch</h2>
+						<p>Feel free to reach out to me anytime if you have any questions, suggestions, or would like to collaborate. Your feedback is important to me. Whether you're looking for information, seeking assistance, or just want to connect, I am just an email or a phone call away. Don't hesitate to contact me— I am excited to hear from you and be a part of your team!
+						</p>
+						<form name="submit-to-google-sheet" method="post" action="#">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="4"></textarea>
+								</div>
+							</div>
+							<span id="msg"></span>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</form>
+						<ul class="contact">
+							<li class="icon solid fa-home">
+								98 Upper Sunset dr.<br />
+								Sonora, CA 95370
+							</li>
+							<li class="icon solid fa-phone">(209) 768-2808</li>
+							<li class="icon solid fa-envelope"><a href="#">Vanceflores98@gmail.com</a></li>
+							<li class="icon brands fa-github"><a href="https://github.com/FloresDesigns">github.com/FloresDesigns</a></li>
+						</ul>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				const scriptURL = 'https://script.google.com/macros/s/AKfycbzJQyIW10h2mYADTNzrc1ib2G0_aaCxoOKXHDrqrodL7VPXzKK9-9TpW--94jUj-UQ/exec'
+				const form = document.forms['submit-to-google-sheet']
+			  
+				form.addEventListener('submit', e => {
+				  e.preventDefault()
+				  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+					.then(response => { 
+						msg.innerHTML = "Message Sent Successfully"
+						setTimeout(function(){
+							msg.innerHTML = ""
+						},3000)
+						form.reset()
+					})
+					.catch(error => console.error('Error!', error.message))
+				})
+			  </script>
+
+
+	</body>
+</html>
